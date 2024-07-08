@@ -1,6 +1,6 @@
 print('Welcome to the calculator app.')
 
-isContinuing = True
+is_continuing = True
 is_starting = True
 
 def add(n1, n2):
@@ -39,7 +39,7 @@ while(is_starting == True):
   print(f"{first_num} {operation} {second_num} = {result}")
   keep_going = input(f"Type 'y' to continue calculating with {result}, or type 'n' to start a new calculation:\n")
 
-  while(isContinuing == True):
+  while(is_continuing == True):
     if(keep_going == 'y'):
       next_operation = input("Choose an operation: '+', '-', '*', '/'\n")
       next_num = float(input("What's the next number?\n"))
@@ -48,4 +48,4 @@ while(is_starting == True):
       print(f"{result} {next_operation} {next_num} = {result}")
       keep_going = input(f"Type 'y' to continue calculating with {result}, or type 'n' to start a new calculation:\n")
     else:
-      isContinuing = False
+      is_continuing = False
