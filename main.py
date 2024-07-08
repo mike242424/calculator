@@ -12,7 +12,7 @@ def subtract(n1, n2):
   return n1 - n2
 
 def multiply(n1, n2):
-  """Takes two numbers and returns the  of the two numbers"""
+  """Takes two numbers and returns the product of the two numbers"""
   return n1 * n2
 
 def divide(n1, n2):
