@@ -4,15 +4,19 @@ isContinuing = True
 is_starting = True
 
 def add(n1, n2):
+  """Takes two numbers and returns the sum of the two numbers"""
   return n1 + n2
 
 def subtract(n1, n2):
+  """Takes two numbers and returns the difference of the two numbers"""
   return n1 - n2
 
 def multiply(n1, n2):
+  """Takes two numbers and returns the  of the two numbers"""
   return n1 * n2
 
 def divide(n1, n2):
+  """Takes two numbers and returns the quotient of the two numbers"""
   return n1 / n2
 
 def calculate(num1, num2, operation):
