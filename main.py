@@ -3,16 +3,28 @@ print('Welcome to the calculator app.')
 isContinuing = True
 is_starting = True
 
+def add(n1, n2):
+  return n1 + n2
+
+def subtract(n1, n2):
+  return n1 - n2
+
+def multiply(n1, n2):
+  return n1 * n2
+
+def divide(n1, n2):
+  return n1 / n2
+
 def calculate(num1, num2, operation):
   """Takes two numbers and an operation and returns the result of the calculation of the two numbers with the specific operation given"""
   if(operation == '+'):
-    return num1 + num2
+    add(num1 + num2)
   elif(operation == '-'):
-    return num1 - num2
+    subtract(num1 - num2)
   elif(operation == '*'):
-    return num1 * num2
+    multiply(num1 * num2)
   elif(operation == '/'):
-    return num1 / num2
+    divide(num1 / num2)
 
 while(is_starting == True):
   first_num = float(input("What's the first number?:\n"))
