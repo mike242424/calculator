@@ -1,3 +1,5 @@
+import os
+
 print('Welcome to the calculator app.')
 
 is_continuing = True
@@ -24,7 +26,6 @@ function_dictionary = {
   "-": subtract,
   "/": divide,
   "*": multiply
-
 }
 
 def calculate(num1, num2, operation):
@@ -48,9 +49,8 @@ def printSymbols():
     options_str += f"'{symbol}' "
   return input(f"Choose an operation: {options_str}\n")
 
-
-
 while(is_starting == True):
+  os.system('clear')
   first_num = float(input("What's the first number?:\n"))
   operation = printSymbols()
   second_num = float(input("What's the next number?\n"))
